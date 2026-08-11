@@ -72,7 +72,7 @@ jobs:
           az webapp delete \
             --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
             --name ${{ env.AZURE_WEBAPP_NAME }} \
-            --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}  --yes
+            --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}  
 
       - name: Delete App Service Plan
         if: success()
